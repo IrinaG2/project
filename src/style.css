@@ -3,7 +3,7 @@
   color: #38598b;
   background: #c2f0fc;
   border-radius: 30px;
-  margin: 20px auto;
+  margin: 20px auto 0;
   padding: 60px 50px;
   box-shadow: 1px 1px 1px 0.3px rgba(0, 0, 255, 0.2);
 }
@@ -43,4 +43,9 @@ h2 {
   font-size: 15px;
   position: relative;
   top: -13px;
+}
+footer {
+  font-family: "Lato", sans-serif;
+  color: #38598b;
+  padding: 0 90px;
 }
