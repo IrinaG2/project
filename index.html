@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="cityHead">Houston, TX</span></h1>
+      <h2>
+        <div class="row">
+          <div class="col-5">
+            <div id="dayTimeHead">11:20 AM</div>
+            <div id="description">Clear</div>
+          </div>
+          <div class="col-4">
+            <span class="iconHead">☀️</span>
+            <span class="temperatureHead" id="temperatureHead">19</span
+            ><span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+
+          <div class="col-3">
+            Humidity: <span id="humidity">60</span>% <br />
+            Wind: <span id="wind">7</span>mph
+          </div>
+        </div>
+      </h2>
+      <div class="next-days">
+        <div class="row">
+          <div class="col-2">
+            <div class="day">Today</div>
+            <div class="temperature">☀️90 F</div>
+          </div>
+          <div class="col-2">
+            <div class="day">Thursday</div>
+
+            <div class="temperature">☁️89 F</div>
+          </div>
+          <div class="col-2">
+            <div class="day">Friday</div>
+            <div class="temperature">🌦️89 F</div>
+          </div>
+          <div class="col-2">
+            <div class="day">Saturday</div>
+            <div class="temperature">☀️90 F</div>
+          </div>
+          <div class="col-2">
+            <div class="day">Sunday</div>
+            <div class="temperature">☀️90 F</div>
+          </div>
+          <div class="col-2">
+            <div class="day">Monday</div>
+            <div class="temperature">☀️90 F</div>
+          </div>
+        </div>
+      </div>
+      <form id="search-form">
+        <div class="row g-3 align-items-center">
+          <div class="col-3">
+            <input
+              type="text"
+              name="city"
+              id="inputCity"
+              class="form-control"
+              placeholder="Enter a city name"
+            />
+          </div>
+          <div class="col-2">
+            <button type="search" class="btn btn-primary" id="search-button">
+              Search
+            </button>
+            <button type="search" class="btn btn-primary" id="current-button">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
