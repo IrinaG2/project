@@ -1,10 +1,11 @@
-.container {
+.weatherApp {
+  max-width: 800px;
   font-family: "Lato", sans-serif;
   color: #38598b;
   background: #c2f0fc;
   border-radius: 30px;
   margin: 20px auto 0;
-  padding: 60px 50px;
+  padding: 40px 40px;
   box-shadow: 1px 1px 1px 0.3px rgba(0, 0, 255, 0.2);
 }
 
@@ -25,7 +26,8 @@ h2 {
   margin-bottom: 80px;
 }
 .day {
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 .temperatureHead {
   font-size: 35px;
@@ -47,5 +49,5 @@ h2 {
 footer {
   font-family: "Lato", sans-serif;
   color: #38598b;
-  padding: 0 90px;
+  padding: 0 255px;
 }
