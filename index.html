@@ -23,78 +23,80 @@
   </head>
   <body>
     <div class="container">
-      <h1><span id="cityHead">Houston, TX</span></h1>
-      <h2>
-        <div class="row">
-          <div class="col-5">
-            <div id="dayTimeHead">11:20 AM</div>
-            <div id="description">Clear</div>
-          </div>
-          <div class="col-4">
-            <span class="iconHead">☀️</span>
-            <span class="temperatureHead" id="temperatureHead">19</span
-            ><span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-          </div>
+      <div class="weatherApp">
+        <h1><span id="cityHead">Houston, TX</span></h1>
+        <h2>
+          <div class="row">
+            <div class="col-5">
+              <div id="dayTimeHead">11:20 AM</div>
+              <div id="description">Clear</div>
+            </div>
+            <div class="col-4">
+              <span class="iconHead">☀️</span>
+              <span class="temperatureHead" id="temperatureHead">19</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
 
-          <div class="col-3">
-            Humidity: <span id="humidity">60</span>% <br />
-            Wind: <span id="wind">7</span>mph
+            <div class="col-3">
+              Humidity: <span id="humidity">60</span>% <br />
+              Wind: <span id="wind">7</span>mph
+            </div>
+          </div>
+        </h2>
+        <div class="next-days">
+          <div class="row">
+            <div class="col-2">
+              <div class="day">Today</div>
+              <div class="temperature">☀️90 F</div>
+            </div>
+            <div class="col-2">
+              <div class="day">Thursday</div>
+
+              <div class="temperature">☁️89 F</div>
+            </div>
+            <div class="col-2">
+              <div class="day">Friday</div>
+              <div class="temperature">🌦️89 F</div>
+            </div>
+            <div class="col-2">
+              <div class="day">Saturday</div>
+              <div class="temperature">☀️90 F</div>
+            </div>
+            <div class="col-2">
+              <div class="day">Sunday</div>
+              <div class="temperature">☀️90 F</div>
+            </div>
+            <div class="col-2">
+              <div class="day">Monday</div>
+              <div class="temperature">☀️90 F</div>
+            </div>
           </div>
         </div>
-      </h2>
-      <div class="next-days">
-        <div class="row">
-          <div class="col-2">
-            <div class="day">Today</div>
-            <div class="temperature">☀️90 F</div>
+        <form id="search-form">
+          <div class="row g-3 align-items-center">
+            <div class="col-3">
+              <input
+                type="text"
+                name="city"
+                id="inputCity"
+                class="form-control"
+                placeholder="Enter a city name"
+              />
+            </div>
+            <div class="col-2">
+              <button type="search" class="btn btn-primary" id="search-button">
+                Search
+              </button>
+              <button type="search" class="btn btn-primary" id="current-button">
+                Current
+              </button>
+            </div>
           </div>
-          <div class="col-2">
-            <div class="day">Thursday</div>
-
-            <div class="temperature">☁️89 F</div>
-          </div>
-          <div class="col-2">
-            <div class="day">Friday</div>
-            <div class="temperature">🌦️89 F</div>
-          </div>
-          <div class="col-2">
-            <div class="day">Saturday</div>
-            <div class="temperature">☀️90 F</div>
-          </div>
-          <div class="col-2">
-            <div class="day">Sunday</div>
-            <div class="temperature">☀️90 F</div>
-          </div>
-          <div class="col-2">
-            <div class="day">Monday</div>
-            <div class="temperature">☀️90 F</div>
-          </div>
-        </div>
+        </form>
       </div>
-      <form id="search-form">
-        <div class="row g-3 align-items-center">
-          <div class="col-3">
-            <input
-              type="text"
-              name="city"
-              id="inputCity"
-              class="form-control"
-              placeholder="Enter a city name"
-            />
-          </div>
-          <div class="col-2">
-            <button type="search" class="btn btn-primary" id="search-button">
-              Search
-            </button>
-            <button type="search" class="btn btn-primary" id="current-button">
-              Current
-            </button>
-          </div>
-        </div>
-      </form>
     </div>
     <script src="src/script.js"></script>
   </body>
